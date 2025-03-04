@@ -4,7 +4,7 @@
     "slug": "newdym",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/images/icon.png",
+    "icon": "./app/assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,20 +13,26 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/images/adaptive-icon.png",
+        "foregroundImage": "./app/assets/images/logo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gsparsh17.newdym"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./app/assets/images/favicon.png"
+      "favicon": "./app/assets/images/logo.png"
     },
     "experiments": {
       "typedRoutes": true
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7ba79585-51c7-4aa3-97d4-9e06046869eb"
+      }
+    }
   }
 }
