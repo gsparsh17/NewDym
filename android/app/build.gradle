@@ -86,7 +86,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.newdym"
+    namespace 'com.gsparsh17.newdym'
     defaultConfig {
         applicationId 'com.gsparsh17.newdym'
         minSdkVersion rootProject.ext.minSdkVersion

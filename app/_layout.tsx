@@ -15,6 +15,7 @@ export default function Layout() {
       <Stack.Screen name="landing" />
       <Stack.Screen name="splash" />
       <Stack.Screen name="(tabs)" />
+      <Stack.Screen name="ServiceDetails" />
     </Stack>
   );
 }

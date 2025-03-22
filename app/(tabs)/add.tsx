@@ -3,9 +3,11 @@ import { View, Text, TextInput, FlatList, TouchableOpacity, Image } from "react-
 import { Picker } from "@react-native-picker/picker";
 import { useFonts, Poppins_400Regular, Poppins_700Bold } from "@expo-google-fonts/poppins";
 import AppLoading from "expo-app-loading";
+import { useNavigation } from "@react-navigation/native"; 
 import services from "../../data/Services"; // Import services data
 
 const AddServiceScreen = () => {
+  const navigation = useNavigation();
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [search, setSearch] = useState("");
 
@@ -74,7 +76,7 @@ const AddServiceScreen = () => {
         renderItem={({ item }) => (
           <TouchableOpacity
             className="bg-white rounded-lg shadow-md p-4 mb-4 mx-4"
-            onPress={() => console.log(`Selected: ${item.title}`)}
+            onPress={() => navigation.navigate("ServiceDetails", { service: item })}
           >
             <Image source={item.imageUrl} className="w-full h-40 rounded-lg mb-3" />
             <Text

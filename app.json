@@ -26,6 +26,10 @@
     "experiments": {
       "typedRoutes": true
     },
+    "updates": {
+   "enabled": true,
+   "fallbackToCacheTimeout": 0
+    },
     "plugins": [
       "expo-font"
     ],
